@@ -41,6 +41,6 @@ Then it should open `http://localhost:3000`.
 
 ## 📝 License
 
-© 2020 [Riwandi](http://riwandi-blog.vercel.app/).
+© 2020 [Riwandi](permisiibu.id).
 
 This project is [MIT License](https://opensource.org/licenses/MIT) licensed.
