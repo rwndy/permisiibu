@@ -1,0 +1,78 @@
+.blog {
+  height: 100%;
+}
+
+.blog-list {
+  margin: 4rem 0 0;
+  padding: 0;
+  cursor: pointer;
+  overflow-y: scroll;
+  height: 64rem;
+}
+
+.blog-item {
+  list-style: none;
+  background-color: $color-secondary;
+  margin-bottom: 1.8rem;
+  padding: 3rem;
+}
+
+.blog-item > a {
+  color: $color-white;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.blog-item > a:hover {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.blog-date {
+  color: $color-white;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+.article-wrap {
+  min-height: 100vh;
+}
+
+.article-text {
+  padding: 0 14rem;
+}
+
+.article-text > p {
+  color: $color-white;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+  padding-bottom: 2.5rem;
+}
+
+.article-title {
+  font-size: clamp(2.4rem, 10vw, 4.8rem);
+  color: $color-white;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.back {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $color-white;
+  cursor: pointer;
+  margin: 10rem 0;
+  padding: 0 14rem;
+}
+
+@media screen and (max-width: 768px) 
+{
+  .article-text, .back {
+    padding: 0;
+  }
+}

@@ -1,0 +1,123 @@
+.about {
+ height: auto;
+
+  &__contain--title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    align-items: center;
+  }
+
+  &__line {
+    border-bottom: 4px solid #fff;
+    width: clamp(7.3rem, 8vw, 10.8rem);
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    font-size: clamp(3.2rem, 3vw, 4.8rem);
+    color: $color-white;
+  }
+
+  &__contain--avatar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    left: 45rem;
+    width: clamp(15rem, 55vw, 25rem);
+    right: 0;
+    border: 8px solid #223F4F;
+    border-radius: 2rem;
+    align-items: center;
+    height: clamp(15rem, 55vw, 25rem);
+    margin: 4rem 0;
+  }
+
+  &__avatar {
+    width: clamp(15rem, 55vw, 25rem);
+    height: clamp(15rem, 55vw, 25rem);
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  &__contain--intro {
+    padding: 0 14rem;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  &__contain--works, &__contain--specialties {
+    margin-top: 5rem;
+    padding: 0 14rem;
+  }
+
+  &__contain--specialties
+  {
+    margin-bottom: 30rem;
+  }
+
+  &__title--works, &__title--specialties {
+    font-size: 3.4rem;
+    color: $color-white;
+    border-bottom: 3px solid #fff;
+    width: 13.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  &__info--works, &__info--specialties {
+    color: $color-white;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+  }
+
+  &__skills {
+    color: $color-white;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+
+    &__contain--title {
+      margin-top: 1rem;
+    }
+
+    &__line {
+      margin-bottom: 1.5rem;
+    }
+
+    &__contain--avatar {
+      left: 5rem;
+    }
+
+    &__contain--intro {
+      padding: 0;
+    }
+
+    &__contain--works, &__contain--specialties {
+      padding: 0;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+    }
+
+    &__contain--specialties
+  {
+    margin-bottom: 3rem;
+  }
+  }
+}
