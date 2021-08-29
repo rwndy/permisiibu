@@ -6,10 +6,12 @@ import Meta from "./Meta";
 import CustomMeta from "./Meta/CustomMeta";
 import Navbar from "./Navbar";
 import PortfolioComponent from "./Portfolio";
+import PreorderPage from "./Preorder";
 
 
 
 
 
 
-export { AboutMe, Home, Meta, CustomMeta, ContactComponent, PortfolioComponent, Footer, Navbar }
+
+export { AboutMe, Home, Meta, CustomMeta, ContactComponent, PortfolioComponent, Footer, Navbar, PreorderPage }
