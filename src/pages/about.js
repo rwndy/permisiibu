@@ -6,7 +6,7 @@ const About = () => {
    <CustomMeta 
       lang="id"
       title={`About | Permisiibu`}
-      url={`permisi.id/about`}
+      url={`permisiibu.id/about`}
       description={`Tentang Permisiibu`}
    />
     <Navbar />
