@@ -7,6 +7,11 @@
   &__row {
     display: grid;
     grid-template-columns: 300px 1fr;
+
+    @include for-very-small() {
+      grid-template-columns: 1fr;
+    }
+
     gap: 30px;
   }
 
@@ -22,6 +27,11 @@
     width: 400px;
     height: 125px;
     border-radius: 5px;
+
+    @include for-very-small() {
+      width: 100%;
+      height: 14.2rem;
+    }
 
     > p {
       color: $color-white;
@@ -67,6 +77,10 @@
     font-size: 1.6rem;
     padding-bottom: 2rem;
     padding-right: 20rem;
+
+    @include for-very-small() {
+      padding-right: 0rem;
+    }
   }
 
   &-quantity {
@@ -125,10 +139,14 @@
     font-size: 1.4rem;
     text-align: center;
     font-weight: bold;
-    border-radius: 3rem;
+    border-radius: 1rem;
     color: $color-white;
     cursor: pointer;
     border: none;
+
+    @include for-very-small() {
+      width: 100%;
+    }
   }
 
   &--disable {
@@ -137,10 +155,14 @@
     font-size: 1.4rem;
     text-align: center;
     font-weight: bold;
-    border-radius: 3rem;
+    border-radius: 1rem;
     cursor: not-allowed;
     color: $color-white;
     border: none;
+
+    @include for-very-small() {
+      width: 100%;
+    }
   }
 }
 
