@@ -6,7 +6,7 @@ slug: asin
 description: Sebuah puisi tentang kegalauan anak muda
 ---
 
-Asin
-Tetesan air laut asin.
-Begitupula tetesan air yang jatuh dari hati yang disebabkan oleh berat otak kepadamu.
+Asin<br/>
+Tetesan air laut asin.<br/>
+Begitupula tetesan air yang jatuh dari hati yang disebabkan oleh berat otak kepadamu.<br/>
 Yang bukan siapa-siapa, dalam genggamanmu. dalam pikiranmu. dalam hatimu.
