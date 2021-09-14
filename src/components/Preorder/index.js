@@ -1,49 +1,49 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState,} from 'react'
 import { useRouter } from 'next/router'
 
 const cover = '/assets/images/cover.jpg'
 
 const PreorderPage = () => {
-  const [ timerDays, setTimerDays ] = useState('00')
-  const [ timerMinutes, setTimerMinutes ] = useState('00')
-  const [ timerHours, setTimerHours ] = useState('00')
-  const [ timerSeconds, setTimerSeconds ] = useState('00')
+  // const [ timerDays, setTimerDays ] = useState('00')
+  // const [ timerMinutes, setTimerMinutes ] = useState('00')
+  // const [ timerHours, setTimerHours ] = useState('00')
+  // const [ timerSeconds, setTimerSeconds ] = useState('00')
   const [ counter, setCounter ] = useState(0)
 
-  let interval = useRef()
+  // let interval = useRef()
   const router = useRouter()
 
-  const startTimer = () => {
-    const countDownDate = new Date('September 14, 2021 00:00:00').getTime()
+  // const startTimer = () => {
+  //   const countDownDate = new Date('September 14, 2021 00:00:00').getTime()
 
-    interval = setInterval(() => {
+  //   interval = setInterval(() => {
 
-      const now = new Date().getTime()
-      const distance = countDownDate - now
+  //     const now = new Date().getTime()
+  //     const distance = countDownDate - now
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24))
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)))
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+  //     const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+  //     const hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)))
+  //     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+  //     const seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
-      if (distance < 0) {
-        clearInterval(interval.current)
-      } else {
-        setTimerDays(days)
-        setTimerHours(hours)
-        setTimerMinutes(minutes)
-        setTimerSeconds(seconds)
-      }
-    }, 1000)
-  }
+  //     if (distance < 0) {
+  //       clearInterval(interval.current)
+  //     } else {
+  //       setTimerDays(days)
+  //       setTimerHours(hours)
+  //       setTimerMinutes(minutes)
+  //       setTimerSeconds(seconds)
+  //     }
+  //   }, 1000)
+  // }
 
-  useEffect(() => {
-    startTimer()
+  // useEffect(() => {
+  //   startTimer()
 
-    return () => {
-      clearInterval(interval.current)
-    }
-  })
+  //   return () => {
+  //     clearInterval(interval.current)
+  //   }
+  // })
 
   const handlerDecrement = () => {
     if (counter === 0) {
@@ -59,6 +59,7 @@ const PreorderPage = () => {
 
   const disableButton = counter === 0 && true
   const handlerPreorder = () => router.push(`https://api.whatsapp.com/send?phone=6282244416800&text=Halo, Admin! Saya ingin order buku Mawar Setengah Hati ${counter}pcs :)`)
+  const handleOrdeGooglePlaybook = () => router.push('https://play.google.com/store/books/details?id=Dec_EAAAQBAJ')
 
   return (
     <section className="preorder-page">
@@ -68,27 +69,7 @@ const PreorderPage = () => {
             <img src={cover} alt="cover boook mawar setengah hati" />
           </div>
           <div className="preorder-page__contain-counter">
-            <div className="preorder-page__counter-time">
-              <p>Sisa waktu untuk merasakkan patah hati bersama:</p>
-              <div className="preorder-page__countdown-time">
-                <div className="preorder-page__countdown-time__days">
-                  <p className="preorder-page__countdown-time__values">{timerDays}</p>
-                  <p className="preorder-page__countdown-time__name"><small>Days</small></p>
-                </div>
-                <div className="preorder-page__countdown-time__hours">
-                  <p className="preorder-page__countdown-time__values">{timerHours}</p>
-                  <p className="preorder-page__countdown-time__name"><small>Hours</small></p>
-                </div>
-                <div className="preorder-page__countdown-time__minutes">
-                  <p className="preorder-page__countdown-time__values">{timerMinutes}</p>
-                  <p className="preorder-page__countdown-time__name"><small>Minutes</small></p>
-                </div>
-                <div className="preorder-page__countdown-time__seconds">
-                  <p className="preorder-page__countdown-time__values">{timerSeconds}</p>
-                  <p className="preorder-page__countdown-time__name"><small>Seconds</small></p>
-                </div>
-              </div>
-            </div>
+            
             <div className="preorder-page__product">
               <h1 className="preorder-page__product-title">Pre-order Buku Mawar Setengah Hati</h1>
               <p className="preorder-page__product-detail">Aku kehilangan sosok yang selalu kujadikan alasan semangat dalam melewati hari-hari yang berat, sangat sulit rasanya untuk bangkit dari semua kenyataan ini, karena semua yang kumimpikan telah hancur.</p>
@@ -108,6 +89,12 @@ const PreorderPage = () => {
                   onClick={handlerPreorder}
                 >
                   Pre-order
+                </button>
+                <button  
+                  className="preorder-page__button--on google-playbook"
+                  onClick={handleOrdeGooglePlaybook}
+                >
+                  Google play book
                 </button>
               </div>
           </div>

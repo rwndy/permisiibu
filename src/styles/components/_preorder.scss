@@ -15,6 +15,10 @@
     gap: 30px;
   }
 
+  &__contain-counter {
+    position: relative;
+  }
+
   &__contain-image {
     > img {
       width: 100%;
@@ -128,7 +132,15 @@
 }
 
 &__button {
-  margin-top: 4rem;
+  position: absolute;
+  bottom: 1rem;
+
+  @include for-very-small() {
+    margin-top: 4rem;
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
 
   > button:focus {
     outline: none;
@@ -167,4 +179,12 @@
   }
 }
 
+}
+
+.google-playbook {
+  margin-left: 2rem;
+
+  @include for-very-small() {
+    margin-top: 2rem;
+  }
 }
