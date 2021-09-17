@@ -15,8 +15,8 @@ const IndexPage = (props) => {
       description={`Blog Permisiibu`}
    />
     <Navbar />
-      <section className="blog">
-        <div className="container ">
+      <section className="blog container">
+        
           <ul className="blog-list">
             {
               sort_post_by_dates.map(blog => {
@@ -31,7 +31,7 @@ const IndexPage = (props) => {
               })
             }
           </ul>
-        </div>   
+        
       </section>
       <Footer />
     </>

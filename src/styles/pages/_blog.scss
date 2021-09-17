@@ -1,13 +1,17 @@
 .blog {
-  height: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 .blog-list {
-  margin: 4rem 0 0;
-  padding: 0;
-  cursor: pointer;
-  overflow-y: scroll;
-  height: 64rem;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @include for-very-small() {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .blog-item {
