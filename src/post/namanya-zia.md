@@ -9,13 +9,16 @@ description: Zia adalah sebuah nama seorang wanita, yang saya sukai dan sayangi 
 Zia adalah nama seorang gadis yang aku jumpai di dunia maya<br>
 tak pernah aku seyakin ini ketika ingin berkenalan dan mengetahui segalanya dari dirinya.<br>
 genggaman tanganmu yg nyaman untuk di genggam<br>
+
 senyumanmu yg membuat ku terasa hangat<br>
 matanya memantulkan segala harapan dan keceriaan bahkan hal-hal yg disimpan oleh dirinya<br>
 bersamanya, waktu terasa jauh lebih cepat<br>
 pergi dari sisinya, terasa sekali rindu kepadanya<br>
+
 sebuah pesan darinya, agar aku tidak boleh pergi meninggalkannya<br>
 aku harap sebaliknya, agar bisa disatu atap yang sama bersamanya<br>
 mungkin kamu membaca tulisan ini<br>
+
 tapi ini apa yang aku rasa, ku tuangkan dalam tinta digital<br>
 bukan bualan laki-laki buaya<br>
 mungkin kamu trauma dengan yang seperti itu<br>
