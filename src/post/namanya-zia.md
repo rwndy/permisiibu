@@ -11,7 +11,7 @@ tak pernah aku seyakin ini ketika ingin berkenalan dan mengetahui segalanya dari
 genggaman tanganmu yg nyaman untuk di genggam<br>
 
 senyumanmu yg membuat ku terasa hangat<br>
-matanya memantulkan segala harapan dan keceriaan bahkan hal-hal yg disimpan oleh dirinya<br>
+matanya memantulkan segala harapan dan keceriaan bahkan hal-hal rahasia yg disimpan oleh dirinya<br>
 bersamanya, waktu terasa jauh lebih cepat<br>
 pergi dari sisinya, terasa sekali rindu kepadanya<br>
 
