@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const menu_burger = '/assets/images/burger.png'
+const menu_burger = '/assets/icons/icon-burger.svg'
 const close_burger = '/assets/images/close.svg'
 const Navbar = () => {
   const item_navbar = [
